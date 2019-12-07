@@ -1,0 +1,28 @@
+import Time
+
+
+print('\033[1;31m ______ ____  _____ _______ _____ ________     __\n'
+'|  ____/ __ \|  __ \__   __|_   _|  ____\ \   / /\n'
+'| |__ | |  | | |__) | | |    | | | |__   \ \_/ / \n'
+'|  __|| |  | |  _  /  | |    | | |  __|   \   /  \n'
+'| |   | |__| | | \ \  | |   _| |_| |       | |   \n'
+'|_|    \____/|_|  \_\ |_|  |_____|_|       |_|   \033[0m\n'
+'\n'
+  '_____  ____  _     _    _ _______ _____ ____  _   _  _____\n' 
+ '/ ____|/ __ \| |   | |  | |__   __|_   _/ __ \| \ | |/ ____|\n'
+'| (___ | |  | | |   | |  | |  | |    | || |  | |  \| | (___  \n'
+ '\___ \| |  | | |   | |  | |  | |    | || |  | | . ` |\___ \ \n'
+' ____) | |__| | |___| |__| |  | |   _| || |__| | |\  |____) |\n'
+'|_____/ \____/|______\____/   |_|  |_____\____/|_| \_|_____/ \n')
+
+print('\033[31m∙∙·▫▫ᵒᴼᵒ▫ₒₒ▫ᵒᴼᵒ▫ₒₒ▫ᵒᴼᵒ (0)(0) ᵒᴼᵒ▫ₒₒ▫ᵒᴼᵒ▫ₒₒ▫ᵒᴼᵒ▫▫·∙∙\033[0m')
+start = time.time()
+print('\n\033[1;31mFORTIFY\033[0m SOLUTIONS\n\033[0;32mVersion:1.01\trelease date:07-12-2019\033[0m')
+print(time.asctime(),'\n')
+print("\033[34m(¯`·.¸¸.·´¯`·.¸¸.->   🎀 TEST YOUR TYPING SPEED 🎀   >-.¸¸.·`¯´·.¸¸.·`¯)\033[0m\n")
+
+while True:
+    r,g,b = '\033[1;31m','\033[1;32m','\033[1;34m'
+    print(b,'Test your typing speed on mobile\033[0m\n');a = input('Enter any Key to start :'); starttime = time.time(); char = input("> "); stoptime = time.time(); print(r,"You enter ",g,len(char),r," character(s) in ",g,round((stoptime-starttime),1),r,' second(s)\n Your typing speed is ',b, round(len(char)/(stoptime-starttime)),r,'character(s) per second')
+    a1 = input('\nEnter [1] to exit or enter any key to continue :')
+    if a1 == '1': break
