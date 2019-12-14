@@ -1,5 +1,14 @@
 import time
+import os
 
+
+def clr():
+    if os.name=='nt':
+        os.system('cls')
+    else:
+        os.system('clear')
+
+clr()
 
 print('\033[1;31m ______ ____  _____ _______ _____ ________     __\n'
 '|  ____/ __ \|  __ \__   __|_   _|  ____\ \   / /\n'
@@ -26,3 +35,4 @@ while True:
     print(b,'Test your typing speed on mobile\033[0m\n');a = input('Enter any Key to start :'); starttime = time.time(); char = input("> "); stoptime = time.time(); print(r,"You enter ",g,len(char),r," character(s) in ",g,round((stoptime-starttime),1),r,' second(s)\n Your typing speed is ',b, round(len(char)/(stoptime-starttime)),r,'character(s) per second')
     a1 = input('\nEnter [1] to exit or enter any key to continue :')
     if a1 == '1': break
+clr()
